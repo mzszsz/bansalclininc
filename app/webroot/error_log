@@ -1,0 +1,158 @@
+[10-Mar-2015 00:59:05 UTC] PHP Warning:  _cake_core_ cache was unable to write 'cake_dev_en-us' to File cache in /home/reforce/public_html/lib/Cake/Cache/Cache.php on line 323
+[10-Mar-2015 00:59:05 UTC] PHP Warning:  /home/reforce/public_html/app/tmp/cache/persistent/ is not writable in /home/reforce/public_html/lib/Cake/Cache/Engine/FileEngine.php on line 385
+[10-Mar-2015 00:59:05 UTC] PHP Fatal error:  Uncaught exception 'CacheException' with message 'Cache engine _cake_core_ is not properly configured.' in /home/reforce/public_html/lib/Cake/Cache/Cache.php:181
+Stack trace:
+#0 /home/reforce/public_html/lib/Cake/Cache/Cache.php(151): Cache::_buildEngine('_cake_core_')
+#1 /home/reforce/public_html/app/Config/core.php(374): Cache::config('_cake_core_', Array)
+#2 /home/reforce/public_html/lib/Cake/Core/Configure.php(72): include('/home/reforce/p...')
+#3 /home/reforce/public_html/lib/Cake/bootstrap.php(175): Configure::bootstrap(true)
+#4 /home/reforce/public_html/app/webroot/index.php(90): include('/home/reforce/p...')
+#5 {main}
+  thrown in /home/reforce/public_html/lib/Cake/Cache/Cache.php on line 181
+[10-Mar-2015 00:59:08 UTC] PHP Warning:  _cake_core_ cache was unable to write 'cake_dev_en-us' to File cache in /home/reforce/public_html/lib/Cake/Cache/Cache.php on line 323
+[10-Mar-2015 00:59:08 UTC] PHP Warning:  /home/reforce/public_html/app/tmp/cache/persistent/ is not writable in /home/reforce/public_html/lib/Cake/Cache/Engine/FileEngine.php on line 385
+[10-Mar-2015 00:59:08 UTC] PHP Fatal error:  Uncaught exception 'CacheException' with message 'Cache engine _cake_core_ is not properly configured.' in /home/reforce/public_html/lib/Cake/Cache/Cache.php:181
+Stack trace:
+#0 /home/reforce/public_html/lib/Cake/Cache/Cache.php(151): Cache::_buildEngine('_cake_core_')
+#1 /home/reforce/public_html/app/Config/core.php(374): Cache::config('_cake_core_', Array)
+#2 /home/reforce/public_html/lib/Cake/Core/Configure.php(72): include('/home/reforce/p...')
+#3 /home/reforce/public_html/lib/Cake/bootstrap.php(175): Configure::bootstrap(true)
+#4 /home/reforce/public_html/app/webroot/index.php(90): include('/home/reforce/p...')
+#5 {main}
+  thrown in /home/reforce/public_html/lib/Cake/Cache/Cache.php on line 181
+[10-Mar-2015 00:59:23 UTC] PHP Warning:  _cake_core_ cache was unable to write 'cake_dev_en-us' to File cache in /home/reforce/public_html/lib/Cake/Cache/Cache.php on line 323
+[10-Mar-2015 00:59:23 UTC] PHP Warning:  /home/reforce/public_html/app/tmp/cache/persistent/ is not writable in /home/reforce/public_html/lib/Cake/Cache/Engine/FileEngine.php on line 385
+[10-Mar-2015 00:59:23 UTC] PHP Fatal error:  Uncaught exception 'CacheException' with message 'Cache engine _cake_core_ is not properly configured.' in /home/reforce/public_html/lib/Cake/Cache/Cache.php:181
+Stack trace:
+#0 /home/reforce/public_html/lib/Cake/Cache/Cache.php(151): Cache::_buildEngine('_cake_core_')
+#1 /home/reforce/public_html/app/Config/core.php(374): Cache::config('_cake_core_', Array)
+#2 /home/reforce/public_html/lib/Cake/Core/Configure.php(72): include('/home/reforce/p...')
+#3 /home/reforce/public_html/lib/Cake/bootstrap.php(175): Configure::bootstrap(true)
+#4 /home/reforce/public_html/app/webroot/index.php(91): include('/home/reforce/p...')
+#5 {main}
+  thrown in /home/reforce/public_html/lib/Cake/Cache/Cache.php on line 181
+[10-Mar-2015 00:59:50 UTC] PHP Warning:  _cake_core_ cache was unable to write 'cake_dev_en-us' to File cache in /home/reforce/public_html/lib/Cake/Cache/Cache.php on line 323
+[10-Mar-2015 00:59:50 UTC] PHP Warning:  /home/reforce/public_html/app/tmp/cache/persistent/ is not writable in /home/reforce/public_html/lib/Cake/Cache/Engine/FileEngine.php on line 385
+[10-Mar-2015 00:59:50 UTC] PHP Fatal error:  Uncaught exception 'CacheException' with message 'Cache engine _cake_core_ is not properly configured.' in /home/reforce/public_html/lib/Cake/Cache/Cache.php:181
+Stack trace:
+#0 /home/reforce/public_html/lib/Cake/Cache/Cache.php(151): Cache::_buildEngine('_cake_core_')
+#1 /home/reforce/public_html/app/Config/core.php(374): Cache::config('_cake_core_', Array)
+#2 /home/reforce/public_html/lib/Cake/Core/Configure.php(72): include('/home/reforce/p...')
+#3 /home/reforce/public_html/lib/Cake/bootstrap.php(175): Configure::bootstrap(true)
+#4 /home/reforce/public_html/app/webroot/index.php(90): include('/home/reforce/p...')
+#5 {main}
+  thrown in /home/reforce/public_html/lib/Cake/Cache/Cache.php on line 181
+[10-Mar-2015 01:00:14 UTC] PHP Warning:  _cake_core_ cache was unable to write 'cake_dev_en-us' to File cache in /home/reforce/public_html/lib/Cake/Cache/Cache.php on line 323
+[10-Mar-2015 01:00:14 UTC] PHP Warning:  /home/reforce/public_html/app/tmp/cache/persistent/ is not writable in /home/reforce/public_html/lib/Cake/Cache/Engine/FileEngine.php on line 385
+[10-Mar-2015 01:00:14 UTC] PHP Fatal error:  Uncaught exception 'CacheException' with message 'Cache engine _cake_core_ is not properly configured.' in /home/reforce/public_html/lib/Cake/Cache/Cache.php:181
+Stack trace:
+#0 /home/reforce/public_html/lib/Cake/Cache/Cache.php(151): Cache::_buildEngine('_cake_core_')
+#1 /home/reforce/public_html/app/Config/core.php(374): Cache::config('_cake_core_', Array)
+#2 /home/reforce/public_html/lib/Cake/Core/Configure.php(72): include('/home/reforce/p...')
+#3 /home/reforce/public_html/lib/Cake/bootstrap.php(175): Configure::bootstrap(true)
+#4 /home/reforce/public_html/app/webroot/index.php(90): include('/home/reforce/p...')
+#5 {main}
+  thrown in /home/reforce/public_html/lib/Cake/Cache/Cache.php on line 181
+[10-Mar-2015 01:00:29 UTC] PHP Warning:  _cake_core_ cache was unable to write 'cake_dev_en-us' to File cache in /home/reforce/public_html/lib/Cake/Cache/Cache.php on line 323
+[10-Mar-2015 01:00:29 UTC] PHP Warning:  /home/reforce/public_html/app/tmp/cache/persistent/ is not writable in /home/reforce/public_html/lib/Cake/Cache/Engine/FileEngine.php on line 385
+[10-Mar-2015 01:00:29 UTC] PHP Fatal error:  Uncaught exception 'CacheException' with message 'Cache engine _cake_core_ is not properly configured.' in /home/reforce/public_html/lib/Cake/Cache/Cache.php:181
+Stack trace:
+#0 /home/reforce/public_html/lib/Cake/Cache/Cache.php(151): Cache::_buildEngine('_cake_core_')
+#1 /home/reforce/public_html/app/Config/core.php(374): Cache::config('_cake_core_', Array)
+#2 /home/reforce/public_html/lib/Cake/Core/Configure.php(72): include('/home/reforce/p...')
+#3 /home/reforce/public_html/lib/Cake/bootstrap.php(175): Configure::bootstrap(true)
+#4 /home/reforce/public_html/app/webroot/index.php(90): include('/home/reforce/p...')
+#5 {main}
+  thrown in /home/reforce/public_html/lib/Cake/Cache/Cache.php on line 181
+[10-Mar-2015 01:27:11 UTC] PHP Fatal error:  Can't use function return value in write context in /home/reforce/public_html/app/Controller/DashboardController.php on line 649
+[10-Mar-2015 01:35:13 UTC] PHP Fatal error:  Can't use function return value in write context in /home/reforce/public_html/app/Controller/DashboardController.php on line 649
+[10-Mar-2015 01:35:26 UTC] PHP Fatal error:  Can't use function return value in write context in /home/reforce/public_html/app/Controller/DashboardController.php on line 649
+[10-Mar-2015 01:35:28 UTC] PHP Fatal error:  Can't use function return value in write context in /home/reforce/public_html/app/Controller/DashboardController.php on line 649
+[10-Mar-2015 01:36:04 UTC] PHP Fatal error:  Can't use function return value in write context in /home/reforce/public_html/app/Controller/DashboardController.php on line 649
+[10-Mar-2015 01:36:18 UTC] PHP Fatal error:  Can't use function return value in write context in /home/reforce/public_html/app/Controller/DashboardController.php on line 649
+[10-Mar-2015 01:38:16 UTC] PHP Fatal error:  Can't use function return value in write context in /home/reforce/public_html/app/Controller/DashboardController.php on line 649
+[10-Mar-2015 01:38:57 UTC] PHP Fatal error:  Can't use function return value in write context in /home/reforce/public_html/app/Controller/DashboardController.php on line 649
+[10-Mar-2015 01:39:52 UTC] PHP Fatal error:  Can't use function return value in write context in /home/reforce/public_html/app/Controller/DashboardController.php on line 649
+[10-Mar-2015 01:40:01 UTC] PHP Fatal error:  Can't use function return value in write context in /home/reforce/public_html/app/Controller/DashboardController.php on line 649
+[10-Mar-2015 01:40:22 UTC] PHP Fatal error:  Can't use function return value in write context in /home/reforce/public_html/app/Controller/DashboardController.php on line 649
+[10-Mar-2015 01:41:19 UTC] PHP Fatal error:  Can't use function return value in write context in /home/reforce/public_html/app/Controller/DashboardController.php on line 649
+[10-Mar-2015 01:41:33 UTC] PHP Fatal error:  Can't use function return value in write context in /home/reforce/public_html/app/Controller/DashboardController.php on line 649
+[10-Mar-2015 01:41:38 UTC] PHP Fatal error:  Can't use function return value in write context in /home/reforce/public_html/app/Controller/DashboardController.php on line 649
+[10-Mar-2015 01:42:11 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/reforce/public_html/app/Controller/DashboardController.php on line 650
+[10-Mar-2015 01:46:11 UTC] PHP Fatal error:  Can't use function return value in write context in /home/reforce/public_html/app/Controller/DashboardController.php on line 649
+[10-Mar-2015 01:56:30 UTC] PHP Fatal error:  Can't use function return value in write context in /home/reforce/public_html/app/Controller/DashboardController.php on line 649
+[10-Mar-2015 01:56:34 UTC] PHP Fatal error:  Can't use function return value in write context in /home/reforce/public_html/app/Controller/DashboardController.php on line 649
+[10-Mar-2015 01:56:37 UTC] PHP Fatal error:  Can't use function return value in write context in /home/reforce/public_html/app/Controller/DashboardController.php on line 649
+[09-Mar-2015 21:15:08 CST6CDT] PHP Fatal error:  Call to undefined function pxhpinfo() in /home/reforce/public_html/app/webroot/index.php on line 20
+[11-Mar-2015 02:01:06 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 288
+[11-Mar-2015 03:19:45 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 169
+[11-Mar-2015 03:19:49 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 169
+[11-Mar-2015 03:22:18 UTC] PHP Fatal error:  Call to undefined function float() in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 170
+[11-Mar-2015 03:22:22 UTC] PHP Fatal error:  Call to undefined function float() in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 170
+[11-Mar-2015 05:57:06 UTC] PHP Fatal error:  Call to undefined method View::loadModel() in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 168
+[11-Mar-2015 05:57:17 UTC] PHP Fatal error:  Call to undefined method View::loadModel() in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 168
+[11-Mar-2015 15:39:45 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 170
+[11-Mar-2015 15:40:56 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 170
+[11-Mar-2015 15:49:41 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/reforce/public_html/app/View/Businesses/report.ctp on line 167
+[11-Mar-2015 17:46:30 UTC] PHP Fatal error:  Call to undefined method View::paginate() in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 43
+[11-Mar-2015 17:51:53 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 43
+[11-Mar-2015 17:54:55 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 43
+[11-Mar-2015 17:56:07 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 44
+[11-Mar-2015 17:56:17 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 46
+[11-Mar-2015 18:07:01 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 44
+[11-Mar-2015 18:07:23 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 47
+[11-Mar-2015 18:45:00 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/reforce/public_html/app/Controller/DashboardController.php on line 2411
+[11-Mar-2015 18:45:11 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/reforce/public_html/app/Controller/DashboardController.php on line 2411
+[11-Mar-2015 18:45:12 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/reforce/public_html/app/Controller/DashboardController.php on line 2411
+[11-Mar-2015 18:45:13 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/reforce/public_html/app/Controller/DashboardController.php on line 2411
+[11-Mar-2015 18:45:15 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/reforce/public_html/app/Controller/DashboardController.php on line 2411
+[11-Mar-2015 18:45:58 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/reforce/public_html/app/Controller/DashboardController.php on line 2411
+[11-Mar-2015 18:48:54 UTC] PHP Fatal error:  Call to a member function find() on a non-object in /home/reforce/public_html/app/Controller/DashboardController.php on line 31
+[11-Mar-2015 18:49:19 UTC] PHP Fatal error:  Call to a member function find() on a non-object in /home/reforce/public_html/app/Controller/DashboardController.php on line 31
+[11-Mar-2015 18:49:30 UTC] PHP Fatal error:  Call to a member function find() on a non-object in /home/reforce/public_html/app/Controller/DashboardController.php on line 31
+[11-Mar-2015 18:51:24 UTC] PHP Fatal error:  Call to a member function find() on a non-object in /home/reforce/public_html/app/Controller/DashboardController.php on line 31
+[11-Mar-2015 18:52:41 UTC] PHP Parse error:  syntax error, unexpected '$fivestar' (T_VARIABLE), expecting identifier (T_STRING) in /home/reforce/public_html/app/Controller/DashboardController.php on line 70
+[11-Mar-2015 18:53:17 UTC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/reforce/public_html/app/Controller/DashboardController.php on line 70
+[11-Mar-2015 18:53:53 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/reforce/public_html/app/Controller/DashboardController.php on line 70
+[11-Mar-2015 18:54:04 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ';' in /home/reforce/public_html/app/Controller/DashboardController.php on line 70
+[11-Mar-2015 18:54:18 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in /home/reforce/public_html/app/Controller/DashboardController.php on line 70
+[11-Mar-2015 18:54:46 UTC] PHP Parse error:  syntax error, unexpected '(', expecting ',' or ';' in /home/reforce/public_html/app/Controller/DashboardController.php on line 70
+[11-Mar-2015 19:15:05 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/reforce/public_html/app/Controller/DashboardController.php on line 2364
+[11-Mar-2015 19:33:25 UTC] PHP Parse error:  syntax error, unexpected '$ratarr' (T_VARIABLE), expecting function (T_FUNCTION) in /home/reforce/public_html/app/Controller/BusinessesController.php on line 423
+[11-Mar-2015 19:35:12 UTC] PHP Fatal error:  Cannot redeclare DashboardController::index() in /home/reforce/public_html/app/Controller/DashboardController.php on line 46
+[11-Mar-2015 19:35:24 UTC] PHP Parse error:  syntax error, unexpected ''SocialMedi' (T_ENCAPSED_AND_WHITESPACE), expecting ')' in /home/reforce/public_html/app/Controller/DashboardController.php on line 1352
+[11-Mar-2015 19:36:21 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 43
+[11-Mar-2015 19:42:27 UTC] PHP Fatal error:  Call to undefined method View::find() in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 28
+[11-Mar-2015 19:46:01 UTC] PHP Fatal error:  Call to undefined method View::find() in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 28
+[11-Mar-2015 19:46:56 UTC] PHP Fatal error:  Call to undefined method View::count() in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 28
+[11-Mar-2015 19:47:46 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 28
+[11-Mar-2015 19:48:08 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 28
+[11-Mar-2015 19:48:38 UTC] PHP Fatal error:  Call to undefined method View::count() in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 28
+[11-Mar-2015 19:49:12 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 28
+[11-Mar-2015 19:49:29 UTC] PHP Parse error:  syntax error, unexpected '>' in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 28
+[11-Mar-2015 19:49:38 UTC] PHP Fatal error:  Call to undefined method View::count() in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 28
+[11-Mar-2015 19:49:40 UTC] PHP Fatal error:  Call to undefined method View::count() in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 28
+[11-Mar-2015 19:49:53 UTC] PHP Fatal error:  Call to undefined method View::count() in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 28
+[11-Mar-2015 19:49:56 UTC] PHP Fatal error:  Call to undefined method View::count() in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 28
+[11-Mar-2015 19:50:12 UTC] PHP Fatal error:  Call to undefined method View::count() in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 28
+[11-Mar-2015 19:54:01 UTC] PHP Fatal error:  Call to undefined method View::find() in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 28
+[12-Mar-2015 15:23:28 UTC] PHP Parse error:  syntax error, unexpected '<', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/reforce/public_html/app/View/Dashboard/index.ctp on line 350
+[12-Mar-2015 17:34:10 UTC] PHP Parse error:  syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /home/reforce/public_html/app/View/Dashboard/training.ctp on line 57
+[12-Mar-2015 17:34:29 UTC] PHP Parse error:  syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /home/reforce/public_html/app/View/Dashboard/training.ctp on line 57
+[12-Mar-2015 17:34:51 UTC] PHP Parse error:  syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /home/reforce/public_html/app/View/Dashboard/training.ctp on line 46
+[12-Mar-2015 17:36:30 UTC] PHP Parse error:  syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /home/reforce/public_html/app/View/Dashboard/training.ctp on line 44
+[12-Mar-2015 17:37:41 UTC] PHP Parse error:  syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /home/reforce/public_html/app/View/Dashboard/training.ctp on line 45
+[12-Mar-2015 17:37:49 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/reforce/public_html/app/View/Dashboard/training.ctp on line 57
+[12-Mar-2015 17:38:12 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/reforce/public_html/app/View/Dashboard/training.ctp on line 54
+[12-Mar-2015 17:38:25 UTC] PHP Parse error:  syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /home/reforce/public_html/app/View/Dashboard/training.ctp on line 45
+[12-Mar-2015 17:38:29 UTC] PHP Parse error:  syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /home/reforce/public_html/app/View/Dashboard/training.ctp on line 45
+[13-Mar-2015 00:09:27 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/reforce/public_html/app/Controller/DashboardController.php on line 50
+[13-Mar-2015 00:09:28 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/reforce/public_html/app/Controller/DashboardController.php on line 50
+[13-Mar-2015 00:09:38 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/reforce/public_html/app/Controller/DashboardController.php on line 50
+[13-Mar-2015 00:09:49 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/reforce/public_html/app/Controller/DashboardController.php on line 74
+[13-Mar-2015 00:09:50 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/reforce/public_html/app/Controller/DashboardController.php on line 74
+[13-Mar-2015 00:11:18 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/reforce/public_html/app/Controller/DashboardController.php on line 74
+[13-Mar-2015 00:11:22 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/reforce/public_html/app/Controller/DashboardController.php on line 74
+[13-Mar-2015 00:15:43 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/reforce/public_html/app/Controller/DashboardController.php on line 78
+[13-Mar-2015 12:49:03 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in /home/reforce/public_html/app/View/Users/login.ctp on line 70
+[16-Mar-2015 20:24:46 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/reforce/public_html/app/View/Dashboard/visibility_agency.ctp on line 73

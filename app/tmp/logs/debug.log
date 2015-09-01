@@ -1,0 +1,133 @@
+2015-07-31 02:57:38 Debug: permission: actionUrl-users/index
+2015-07-31 03:44:55 Debug: Array
+(
+    [headers] => From: User Management Plugin <example@example.com>
+X-Mailer: CakePHP Email
+Date: Fri, 31 Jul 2015 03:44:55 -0400
+Message-ID: <55bb2777b1d84ec69c331c23c0a80010@mastersoftwaretechnologies.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+    [message] => Hi Deepak, Click the link below to complete your registration 
+
+ http://mastersoftwaretechnologies.com/propertyreports/userVerification?ident=2&activate=c23c2cbdc0179b9f9cc01ffde86bd813
+
+
+)
+
+2015-07-31 03:45:18 Debug: Array
+(
+    [headers] => From: User Management Plugin <example@example.com>
+X-Mailer: CakePHP Email
+Date: Fri, 31 Jul 2015 03:45:18 -0400
+Message-ID: <55bb278e03584f9eb4181e13c0a80010@mastersoftwaretechnologies.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+    [message] => Welcome Deepak, Thank you for your registration on http://mastersoftwaretechnologies.com/propertyreports/ 
+
+ Thanks,
+User Management Plugin
+
+
+)
+
+2015-07-31 05:05:19 Debug: permission: actionUrl-users/dashboard
+2015-07-31 05:30:56 Debug: permission: actionUrl-users/myprofile
+2015-07-31 05:43:46 Debug: permission: actionUrl-users/myprofile
+2015-07-31 05:46:47 Debug: permission: actionUrl-users/myprofile
+2015-07-31 05:46:50 Debug: permission: actionUrl-users/changePassword
+2015-07-31 05:47:38 Debug: permission: actionUrl-users/myprofile
+2015-07-31 05:50:16 Debug: permission: actionUrl-users/myprofile
+2015-07-31 06:02:33 Debug: Array
+(
+    [headers] => From: User Management Plugin <example@example.com>
+X-Mailer: CakePHP Email
+Date: Fri, 31 Jul 2015 06:02:33 -0400
+Message-ID: <55bb47b90004414f8fb32b30c0a80010@mastersoftwaretechnologies.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+    [message] => Hi Deepak, Click the link below to complete your registration 
+
+ http://mastersoftwaretechnologies.com/propertyreports/userVerification?ident=3&activate=ddd4f4c74b7d5b78314ddb57d2a980f0
+
+
+)
+
+2015-07-31 06:02:49 Debug: permission: actionUrl-users/changePassword
+2015-07-31 06:27:35 Debug: permission: actionUrl-users/changePassword
+2015-07-31 06:28:45 Debug: permission: actionUrl-users/changePassword
+2015-07-31 06:29:20 Debug: permission: actionUrl-users/changePassword
+2015-07-31 06:51:30 Debug: permission: actionUrl-users/myprofile
+2015-07-31 06:59:53 Debug: permission: actionUrl-UserGroups/index
+2015-07-31 07:00:15 Debug: permission: actionUrl-UserGroups/index
+2015-07-31 07:01:03 Debug: permission: actionUrl-UserGroups/index
+2015-08-01 00:46:52 Debug: permission: actionUrl-user_groups/addGroup
+2015-08-14 04:58:25 Debug: permission: actionUrl-users/dashboard
+2015-08-14 06:48:10 Debug: permission: actionUrl-user_groups/addGroup
+2015-08-14 07:41:54 Debug: permission: actionUrl-user_group_permissions/index
+2015-08-14 08:09:21 Debug: permission: actionUrl-users/changePassword
+2015-08-17 01:35:39 Debug: Could not send verification email to userid-5
+2015-08-17 03:33:01 Debug: permission: actionUrl-users/index
+2015-08-17 05:09:56 Debug: permission: actionUrl-users/index
+2015-08-17 05:29:31 Debug: permission: actionUrl-users/index
+2015-08-17 05:29:37 Debug: permission: actionUrl-users/index
+2015-08-17 06:49:21 Debug: permission: actionUrl-users/dashboard
+2015-08-17 07:40:46 Debug: permission: actionUrl-location/index
+2015-08-17 07:42:01 Debug: permission: actionUrl-location/index
+2015-08-17 07:42:06 Debug: permission: actionUrl-location/index
+2015-08-17 08:04:16 Debug: permission: actionUrl-location/index
+2015-08-17 08:14:38 Debug: permission: actionUrl-users/dashboard
+2015-08-17 09:10:06 Debug: permission: actionUrl-location/index
+2015-08-17 09:12:32 Debug: permission: actionUrl-location/index
+2015-08-18 00:05:45 Debug: permission: actionUrl-location/allLocations
+2015-08-18 00:05:58 Debug: permission: actionUrl-location/allLocations
+2015-08-18 00:07:00 Debug: permission: actionUrl-location/allLocations
+2015-08-18 00:07:50 Debug: permission: actionUrl-location/allLocations
+2015-08-18 00:07:55 Debug: permission: actionUrl-location/allLocations
+2015-08-18 00:09:38 Debug: permission: actionUrl-location/allLocations
+2015-08-18 00:24:29 Debug: permission: actionUrl-location/deleteLocation
+2015-08-18 00:41:40 Debug: permission: actionUrl-location/editLocation
+2015-08-18 03:19:06 Debug: permission: actionUrl-location/index
+2015-08-18 03:36:22 Debug: permission: actionUrl-location/index
+2015-08-18 08:10:09 Debug: permission: actionUrl-location/index
+2015-08-18 08:21:49 Debug: permission: actionUrl-users/dashboard
+2015-08-19 00:01:12 Debug: permission: actionUrl-location/index
+2015-08-19 04:01:32 Debug: permission: actionUrl-case/index
+2015-08-19 05:04:00 Debug: permission: actionUrl-case/index
+2015-08-19 06:08:14 Debug: permission: actionUrl-location/index
+2015-08-19 06:12:48 Debug: permission: actionUrl-location/index
+2015-08-19 09:00:52 Debug: permission: actionUrl-case/index
+2015-08-19 09:22:13 Debug: permission: actionUrl-case/index
+2015-08-19 23:57:27 Debug: permission: actionUrl-location/index
+2015-08-19 23:57:35 Debug: permission: actionUrl-location/index
+2015-08-20 00:22:17 Debug: permission: actionUrl-case/uploadImage
+2015-08-24 05:03:56 Debug: permission: actionUrl-case/index
+2015-08-24 06:05:09 Debug: permission: actionUrl-location/allLocations
+2015-08-24 06:12:20 Debug: permission: actionUrl-location/allLocations
+2015-08-24 06:20:47 Debug: permission: actionUrl-PropertyCase/allCases
+2015-08-24 07:37:59 Debug: permission: actionUrl-PropertyCase/editCase
+2015-08-24 08:37:52 Debug: permission: actionUrl-PropertyCase/allCases
+2015-08-24 08:50:40 Debug: permission: actionUrl-PropertyCase/allCases
+2015-08-24 08:51:45 Debug: permission: actionUrl-PropertyCase/allCases
+2015-08-24 09:03:22 Debug: permission: actionUrl-PropertyCase/processCase
+2015-08-24 09:12:16 Debug: permission: actionUrl-PropertyCase/uploadImage
+2015-08-26 05:03:37 Debug: permission: actionUrl-PropertyCase/processCase
+2015-08-26 06:11:51 Debug: permission: actionUrl-PropertyCase/uploadImage
+2015-08-26 06:14:10 Debug: permission: actionUrl-PropertyCase/processCase
+2015-08-27 01:44:05 Debug: permission: actionUrl-users/dashboard
+2015-08-27 01:44:09 Debug: permission: actionUrl-users/dashboard
+2015-09-01 00:22:54 Debug: permission: actionUrl-users/viewUser
+2015-09-01 00:24:59 Debug: permission: actionUrl-users/viewUser
+2015-09-01 00:25:04 Debug: permission: actionUrl-users/addUser
+2015-09-01 02:45:58 Debug: permission: actionUrl-Treatment/addCosmatics
+2015-09-01 03:03:44 Debug: permission: actionUrl-Treatment/addConsultation
+2015-09-01 03:04:54 Debug: permission: actionUrl-Treatment/addConsultation
+2015-09-01 05:06:16 Debug: permission: actionUrl-patients/index
+2015-09-01 05:18:23 Debug: permission: actionUrl-users/viewUser
+2015-09-01 05:21:17 Debug: permission: actionUrl-users/viewUser
+2015-09-01 05:21:21 Debug: permission: actionUrl-users/viewUser
+2015-09-01 06:25:59 Debug: permission: actionUrl-Treatment/allConsultations
+2015-09-01 06:52:50 Debug: permission: actionUrl-users/viewUser
+2015-09-01 07:26:43 Debug: permission: actionUrl-ProcedureCategory/addProCat

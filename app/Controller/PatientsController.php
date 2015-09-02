@@ -1,23 +1,4 @@
 <?php
-/*
-	This file is part of UserMgmt.
-
-	Author: Chetan Varshney (http://ektasoftwares.com)
-
-	UserMgmt is free software: you can redistribute it and/or modify
-	it under the terms of the GNU General Public License as published by
-	the Free Software Foundation, either version 3 of the License, or
-	(at your option) any later version.
-
-	UserMgmt is distributed in the hope that it will be useful,
-	but WITHOUT ANY WARRANTY; without even the implied warranty of
-	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-	GNU General Public License for more details.
-
-	You should have received a copy of the GNU General Public License
-	along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
-*/
-
 App::uses('UserMgmtAppController', 'Usermgmt.Controller');
 
 class PatientsController extends UserMgmtAppController {
@@ -27,6 +8,10 @@ class PatientsController extends UserMgmtAppController {
 	 * @var array
 	 */
 	public $uses = array('Usermgmt.User', 'Usermgmt.UserGroup', 'Usermgmt.LoginToken','Patient','Treatment');
+	var $paginate = array(
+		'limit' => 5
+		);
+
 	/**
 	 * Called before the controller action.  You can use this method to configure and customize components
 	 * or perform logic that needs to happen before each controller action.
@@ -44,17 +29,49 @@ class PatientsController extends UserMgmtAppController {
 	 * @return array
 	 */
 	public function index($type='') {
-		$patients=$this->Patient->find('all', array('order'=>'Patient.id desc','admin_id'=>$this->UserAuth->getUserId()));
-		$this->set('patients', $patients);
+		$limit=PAGE_LIMIT;
+		$this->paginate = array(
+				 'conditions'=>array('admin_id'=>$this->UserAuth->getUserId()),
+				 'order'=>'Patient.id desc',
+                 'limit' => $limit
+             );
+        $data = $this->paginate('Patient');
+        $this->set('patients',$data);
+        $this->set('limit',$limit);
+
+            // echo "<pre>";
+            // var_dump($data); 
+            // echo "</pre>";
+
+		//ALL PATIENTS LOOP
+		//$patients=$this->Patient->find('all', array('order'=>'Patient.id desc',array('conditions'=>array('admin_id'=>$this->UserAuth->getUserId()))));
+		//$this->set('patients', $patients);
+
+		//COUNT CONSULTAIONS FOR EACH PATIENT
+		$queryConsultation=$this->Treatment->query("SELECT count(*) as total,patient_id FROM treatments where type='consultation' group by patient_id;");
+		$countConsultation=array();
+		foreach ($queryConsultation as $key => $value) {
+			$countConsultation[$value['treatments']['patient_id']]=$value[0]['total'];
+		}
+		$this->set('countConsultation',$countConsultation);
+
+		//COUNT PROCEDURES FOR EACH PATIENT
+		$queryProcedure=$this->Treatment->query("SELECT count(*) as total,patient_id FROM treatments where type='procedure' group by patient_id;");
+		$countProcedure=array();
+		foreach ($queryProcedure as $key => $value) {
+			$countProcedure[$value['treatments']['patient_id']]=$value[0]['total'];
+		}
+		$this->set('countProcedure',$countProcedure);
 	}
 	public function addPatient($value='')
 	{
 		$typeOfTreatments=array('consultation'=>'Consultation','procedure'=>'Procedure');
-			$this->set('typeOfTreatments', $typeOfTreatments);
+		
+		$this->set('typeOfTreatments', $typeOfTreatments);
 
 		if ($this->request -> isPost()) {
 				$this->Patient->set($this->data);
-				//if($this->ProcedureCategory->thisValidate()){
+				if($this->Patient->thisValidate()){
 					$this->Patient->save($this->request->data,false);
 					$this->Session->setFlash(__('Patient is successfully added'));
 					$maxpID=$this->Patient->getLastInsertId();
@@ -62,7 +79,19 @@ class PatientsController extends UserMgmtAppController {
 					$this->redirect('/addConsultation/'.$maxpID);
 					if($this->request->data['Patient']['type_of_treatment']=='procedure')
 					$this->redirect('/addProcedure/'.$maxpID);
-				//}
+				}
+				else{
+					//var_dump($this->Patient->validationErrors);
+					if(isset($this->Patient->validationErrors['phone']) && $this->request->data['Patient']['phone']!=''){
+						$old_patient=$this->Patient->find('first', array('order'=>'Patient.id desc','conditions'=>array('phone'=>$this->request->data['Patient']['phone'])));
+						$this->set('old_patient', $old_patient['Patient']['id']);
+					}
+					elseif(isset($this->Patient->validationErrors['email']) && $this->request->data['Patient']['email']!=''){
+						$old_patient=$this->Patient->find('first', array('order'=>'Patient.id desc','conditions'=>array('email'=>$this->request->data['Patient']['email'])));
+						$this->set('old_patient', $old_patient['Patient']['id']);
+					}
+					//var_dump($old_patient['Patient']['id']);
+				}
 		}
 	}
 
@@ -90,11 +119,11 @@ class PatientsController extends UserMgmtAppController {
 				
 				if ($this->request -> isPut()) {
 					$this->Patient->set($this->data);
-					//if ($this->PropertyCase->thisValidate()) {
+					if ($this->Patient->thisValidate()) {
 						$this->Patient->save($this->request->data,false);
 						$this->Session->setFlash(__('The Patient is successfully updated'));
 						$this->redirect('/allPatients');
-					//}
+					}
 				} 
 				else 
 				{

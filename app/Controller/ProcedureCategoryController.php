@@ -44,8 +44,18 @@ class ProcedureCategoryController extends UserMgmtAppController {
 	 * @return array
 	 */
 	public function index($type='') {
-		$categories=$this->ProcedureCategory->find('all', array('order'=>'ProcedureCategory.id desc','admin_id'=>$this->UserAuth->getUserId()));
-		$this->set('categories', $categories);
+		// $categories=$this->ProcedureCategory->find('all', array('order'=>'ProcedureCategory.id desc','conditions'=>array('admin_id'=>$this->UserAuth->getUserId())));
+		// $this->set('categories', $categories);
+
+		$limit=PAGE_LIMIT;
+		$this->paginate = array(
+				 'conditions'=>array('admin_id'=>$this->UserAuth->getUserId()),
+				 'order'=>'ProcedureCategory.id desc',
+                 'limit' => $limit
+             );
+        $data = $this->paginate('ProcedureCategory');
+        $this->set('categories',$data);
+        $this->set('limit',$limit);
 	}
 	public function addProCat($value='')
 	{

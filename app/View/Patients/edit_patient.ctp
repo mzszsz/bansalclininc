@@ -37,20 +37,20 @@
                                             <div class="">
                                                     <div class="form-group">
                                                         <div class="row">
-                                                        <div class="col-sm-4"><label><?php echo __('Name');?></label></div>
+                                                        <div class="col-sm-4"><label><?php echo __('Name *');?></label></div>
                                                         <div class="col-sm-4"><?php echo $this->Form->input("first_name" ,array('label' => false,'div' => false,'class'=>"form-control",'placeholder'=>'First Name' ))?></div>
                                                         <div class="col-sm-4"><?php echo $this->Form->input("last_name" ,array('label' => false,'div' => false,'class'=>"form-control",'placeholder'=>'Last Name' ))?></div>
                                                     </div>
                                                     </div>
                                                     <div class="form-group">
                                                         <div class="row">
-                                                        <div class="col-sm-4"><label><?php echo __('Phone');?></label></div>
+                                                        <div class="col-sm-4"><label><?php echo __('Phone *');?></label></div>
                                                         <div class="col-sm-8"><?php echo $this->Form->input("phone" ,array('label' => false,'div' => false,'class'=>"form-control" ))?></div>
                                                     </div>
                                                     </div>
                                                     <div class="form-group">
                                                         <div class="row">
-                                                        <div class="col-sm-4"><label><?php echo __('Email');?></label></div>
+                                                        <div class="col-sm-4"><label><?php echo __('Email *');?></label></div>
                                                         <div class="col-sm-8"><?php echo $this->Form->input("email" ,array('label' => false,'div' => false,'class'=>"form-control" ))?></div>
                                                     </div>
                                                     </div>
@@ -87,18 +87,21 @@
                                                         <div class="col-sm-8"><?php echo $this->Form->input("country" ,array('label' => false,'div' => false,'class'=>"form-control" ))?></div>
                                                     </div>
                                                     </div>
-
-                                                    <div class="form-group">
-                                                        <div class="row">
-                                                        <div class="col-sm-4"><label><?php echo __('Type of Treatment');?></label></div>
-                                                        <div class="col-sm-8"><?php echo $this->Form->input("type_of_treatment" ,array('label' => false,'div' => false,'class'=>"form-control" ))?></div>
-                                                    </div>
-                                                    </div>
                                                     
                                             </div>
                                             <div class="form-group">
                                                 <label></label>
-                                                <div class="umstyle4"><?php echo $this->Form->Submit(__('Update Patient'),array("class"=>"btn btn-primary"));?></div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                    <?php echo $this->Form->Submit(__('Update Patient'),array("class"=>"btn btn-primary"));?> 
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                    <a href="<?php echo $this->webroot.'addConsultation/'.$this->request->data['Patient']['id'];?>" class="btn btn-danger">Add Consultation</a> 
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                    <a href="<?php echo $this->webroot.'addProcedure/'.$this->request->data['Patient']['id'];?>" class="btn btn-danger">Add Procedure</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <?php echo $this->Form->end(); ?>
                                 </div>

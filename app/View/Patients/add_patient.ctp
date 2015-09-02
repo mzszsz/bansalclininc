@@ -32,25 +32,34 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-sm-7">
+
+                                    <?php
+                                    if(isset($old_patient)){
+                                        ?>
+                                        <div class="error-message">Patient already registered.<a href="<?php echo $this->webroot.'editPatient/'.$old_patient; ?>">Please Visit here</a></div>
+                                        <?php
+                                    }
+                                    ?>
+
                                 	<?php echo $this->Form->create('Patient'); ?>
                                 	<?php echo $this->Form->input("admin_id" ,array('label' => false,'div' => false,'type'=>"hidden",'value'=>$this->UserAuth->getUserId() ))?>
 											<div class="">
                                                     <div class="form-group">
                                                         <div class="row">
-                                                        <div class="col-sm-4"><label><?php echo __('Name');?></label></div>
+                                                        <div class="col-sm-4"><label><?php echo __('Name *');?></label></div>
                                                         <div class="col-sm-4"><?php echo $this->Form->input("first_name" ,array('label' => false,'div' => false,'class'=>"form-control",'placeholder'=>'First Name' ))?></div>
                                                         <div class="col-sm-4"><?php echo $this->Form->input("last_name" ,array('label' => false,'div' => false,'class'=>"form-control",'placeholder'=>'Last Name' ))?></div>
                                                     </div>
                                                     </div>
                                                     <div class="form-group">
                                                         <div class="row">
-                                                        <div class="col-sm-4"><label><?php echo __('Phone');?></label></div>
+                                                        <div class="col-sm-4"><label><?php echo __('Phone *');?></label></div>
                                                         <div class="col-sm-8"><?php echo $this->Form->input("phone" ,array('label' => false,'div' => false,'class'=>"form-control" ))?></div>
                                                     </div>
                                                     </div>
                                                     <div class="form-group">
                                                         <div class="row">
-                                                        <div class="col-sm-4"><label><?php echo __('Email');?></label></div>
+                                                        <div class="col-sm-4"><label><?php echo __('Email *');?></label></div>
                                                         <div class="col-sm-8"><?php echo $this->Form->input("email" ,array('label' => false,'div' => false,'class'=>"form-control" ))?></div>
                                                     </div>
                                                     </div>

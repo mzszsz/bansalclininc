@@ -22,8 +22,8 @@
                         <div class="panel-body">
                             <div class="row">
                             <div class="col-sm-12">
-                               
-                                
+<?php $span = isset($span) ? $span : 8; ?>
+<?php $page = isset($this->request->params['named']['page']) ? $this->request->params['named']['page'] : 1; ?>                                
                                 <?php
                                 if(!empty($patients)){
                                     foreach ($patients as $key => $value) {
@@ -57,7 +57,28 @@
                                       <?php
                                     }
                                 }?>
-                            
+<!-- PAGINATION -->
+        <ul class="pagination">
+            <?php echo $this->Paginator->prev('&larr; ' . __('Previous'),array('escape' => false,'tag' => 'li'),'<a onclick="return false;">&larr; Previous</a>',array('class'=>'disabled prev','escape' => false,'tag' => 'li'));?>
+            
+
+            <?php   $count = $page + $span; 
+                    $i = $page - $span; 
+                    while ($i < $count): 
+                    $options = ''; 
+                    if ($i == $page): 
+                     $options = ' class="active"';
+                    endif;
+                    if ($this->Paginator->hasPage($i) && $i > 0): ?>
+                    <li<?php echo $options; ?>><?php echo $this->Html->link($i, array("page" => $i)); ?></li>
+            <?php   endif; 
+                     $i += 1; 
+                 endwhile; ?>
+            
+            <?php echo $this->Paginator->next(__('Next') . ' &rarr;',array('escape' => false,'tag' => 'li'),'<a onclick="return false;">Next &rarr;</a>',array('class' => 'disabled next','escape' => false,'tag' => 'li'));?> 
+            <li><a href="#" class="disabled"><b><?php echo $this->Paginator->counter(); ?></b></a></li>
+        </ul> 
+<!-- PAGINATION -->                            
                             </div>
                             <!-- /.row (nested) -->
                         </div>

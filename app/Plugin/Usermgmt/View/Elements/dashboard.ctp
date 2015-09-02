@@ -75,7 +75,6 @@
                                     </li>
                                     <li><a href="<?php echo $this->base; ?>/allProcedures/"><i class="fa fa-file fa-fw"></i> All Procedures</a></li>
                                     <li><a href="<?php echo $this->base; ?>/allConsultations/"><i class="fa fa-file fa-fw"></i> All Consultations</a></li>
-                                    <li><a href="#"><i class="fa fa-file fa-fw"></i> Reports</a></li>
                                     <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a></li>
                                     <li><a href="<?php echo $this->base; ?>/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
                                     

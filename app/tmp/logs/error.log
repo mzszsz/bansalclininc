@@ -8120,3 +8120,186 @@ Stack Trace:
 #3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-09-01 07:45:38 Error: Fatal Error (4): syntax error, unexpected ')' in [/var/www/html/bansalclinic/app/Model/Patient.php, line 45]
+2015-09-01 07:45:38 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /bansalclinic/allPatients/
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 45, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 45, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-01 07:46:08 Error: Fatal Error (64): Cannot redeclare class ProcedureCategory in [/var/www/html/bansalclinic/app/Model/Patient.php, line 52]
+2015-09-01 07:46:08 Error: [FatalErrorException] Cannot redeclare class ProcedureCategory
+Request URL: /bansalclinic/allPatients/
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/html/b...', 52)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/html/b...', 52, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/html/b...', 52, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-01 07:57:13 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Treatment.count' in 'field list'
+Request URL: /bansalclinic/allPatients/
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Patient...', Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Patient...', Array, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Patient...', false)
+#4 /var/www/html/bansalclinic/lib/Cake/Model/Model.php(3022): DboSource->read(Object(Patient), Array)
+#5 /var/www/html/bansalclinic/lib/Cake/Model/Model.php(2994): Model->_readDataSource('all', Array)
+#6 /var/www/html/bansalclinic/app/Controller/PatientsController.php(48): Model->find('all', Array)
+#7 [internal function]: PatientsController->index()
+#8 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PatientsController), Array)
+#9 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PatientsController), Object(CakeRequest))
+#11 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-09-01 08:00:01 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Patient.id' in 'where clause'
+Request URL: /bansalclinic/allPatients/
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT count(*)...', Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT count(*)...', Array, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(1352): DboSource->fetchAll('SELECT count(*)...', false)
+#4 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(1137): DboSource->queryAssociation(Object(Patient), Object(AppModel), 'hasMany', 'Treatment', Array, Array, true, Array, 0, Array)
+#5 /var/www/html/bansalclinic/lib/Cake/Model/Model.php(3022): DboSource->read(Object(Patient), Array)
+#6 /var/www/html/bansalclinic/lib/Cake/Model/Model.php(2994): Model->_readDataSource('all', Array)
+#7 /var/www/html/bansalclinic/app/Controller/PatientsController.php(48): Model->find('all', Array)
+#8 [internal function]: PatientsController->index()
+#9 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PatientsController), Array)
+#10 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PatientsController), Object(CakeRequest))
+#12 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-09-01 08:15:23 Error: Fatal Error (1): Call to a member function error() on a non-object in [/var/www/html/bansalclinic/app/Controller/PatientsController.php, line 67]
+2015-09-01 08:15:23 Error: [FatalErrorException] Call to a member function error() on a non-object
+Request URL: /bansalclinic/addPatient/
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/b...', 67)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/b...', 67, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/b...', 67, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-01 08:16:03 Error: Fatal Error (1): Call to undefined method PatientsController::error() in [/var/www/html/bansalclinic/app/Controller/PatientsController.php, line 67]
+2015-09-01 08:16:03 Error: [FatalErrorException] Call to undefined method PatientsController::error()
+Request URL: /bansalclinic/addPatient/
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/b...', 67)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/b...', 67, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/b...', 67, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-01 08:17:24 Error: Fatal Error (1): Call to a member function tag() on a non-object in [/var/www/html/bansalclinic/app/Controller/PatientsController.php, line 71]
+2015-09-01 08:17:24 Error: [FatalErrorException] Call to a member function tag() on a non-object
+Request URL: /bansalclinic/addPatient/
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/b...', 71)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/b...', 71, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/b...', 71, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 01:02:30 Error: Fatal Error (1): Call to undefined method PatientsController::query() in [/var/www/html/bansalclinic/app/Controller/PatientsController.php, line 31]
+2015-09-02 01:02:30 Error: [FatalErrorException] Call to undefined method PatientsController::query()
+Request URL: /bansalclinic/allPatients/
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/b...', 31)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/b...', 31, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/b...', 31, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 01:14:08 Error: Fatal Error (4): syntax error, unexpected 'if' (T_IF) in [/var/www/html/bansalclinic/app/View/Patients/index.ctp, line 50]
+2015-09-02 01:14:08 Error: [FatalErrorException] syntax error, unexpected 'if' (T_IF)
+Request URL: /bansalclinic/allPatients/
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 50)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 50, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 50, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 01:15:33 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/html/bansalclinic/app/View/Patients/index.ctp, line 45]
+2015-09-02 01:15:33 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /bansalclinic/allPatients/
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 45, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 45, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 02:12:34 Error: [NotFoundException] Not Found
+Request URL: /bansalclinic/patients/index/page:5
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(1086): PaginatorComponent->paginate('Patient', Array, Array)
+#1 /var/www/html/bansalclinic/app/Controller/PatientsController.php(37): Controller->paginate('Patient')
+#2 [internal function]: PatientsController->index()
+#3 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PatientsController), Array)
+#4 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PatientsController), Object(CakeRequest))
+#6 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-09-02 02:16:22 Error: [MissingHelperException] Helper class uriHelper could not be found.
+Exception Attributes: array (
+  'class' => 'uriHelper',
+  'plugin' => false,
+)
+Request URL: /bansalclinic/patients/index/page:2
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('uri')
+#1 /var/www/html/bansalclinic/lib/Cake/View/View.php(848): HelperCollection->__isset('uri')
+#2 /var/www/html/bansalclinic/app/View/Patients/index.ctp(42): View->__get('uri')
+#3 /var/www/html/bansalclinic/lib/Cake/View/View.php(961): include('/var/www/html/b...')
+#4 /var/www/html/bansalclinic/lib/Cake/View/View.php(923): View->_evaluate('/var/www/html/b...', Array)
+#5 /var/www/html/bansalclinic/lib/Cake/View/View.php(473): View->_render('/var/www/html/b...')
+#6 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#7 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PatientsController), Object(CakeRequest))
+#9 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-09-02 02:27:04 Error: Fatal Error (4): syntax error, unexpected '<' in [/var/www/html/bansalclinic/app/View/Patients/index.ctp, line 98]
+2015-09-02 02:27:04 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /bansalclinic/patients/index/page:2
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 98)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 98, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 98, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 02:40:35 Error: Fatal Error (4): syntax error, unexpected 'if' (T_IF), expecting function (T_FUNCTION) in [/var/www/html/bansalclinic/app/View/Helper/AppHelper.php, line 33]
+2015-09-02 02:40:35 Error: [FatalErrorException] syntax error, unexpected 'if' (T_IF), expecting function (T_FUNCTION)
+Request URL: /bansalclinic/patients/index/page:1
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 33)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 33, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 33, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 02:42:33 Error: [NotFoundException] Not Found
+Request URL: /bansalclinic/patients/index/page:4
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(1086): PaginatorComponent->paginate('Patient', Array, Array)
+#1 /var/www/html/bansalclinic/app/Controller/PatientsController.php(38): Controller->paginate('Patient')
+#2 [internal function]: PatientsController->index()
+#3 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PatientsController), Array)
+#4 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PatientsController), Object(CakeRequest))
+#6 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-09-02 02:47:07 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/html/bansalclinic/app/View/Patients/index.ctp, line 51]
+2015-09-02 02:47:07 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /bansalclinic/patients/index/page:1
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 51, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 51, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

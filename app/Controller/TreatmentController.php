@@ -51,15 +51,37 @@ class TreatmentController extends UserMgmtAppController {
 	public function allConsultations(){
 		$this->Treatment->bindModel(array('belongsTo'=>array('User'=>array(),'User'=>array('foreignKey'=>false,'conditions'=>array("User.id = Treatment.doctor_id")))));
 		$this->Treatment->bindModel(array('belongsTo'=>array('Patient'=>array(),'Patient'=>array('foreignKey'=>false,'conditions'=>array("Patient.id = Treatment.patient_id")))));
-		$patients=$this->Treatment->find('all', array('conditions'=>array('Treatment.type'=>'consultation'),'order'=>array('Treatment.id'=> 'desc')));
-		$this->set('patients',$patients);
+		
+
+		$limit=PAGE_LIMIT;
+		$this->paginate = array(
+				 'conditions'=>array('Treatment.type'=>'consultation'),
+				 'order'=>array('Treatment.id'=> 'desc'),
+                 'limit' => $limit
+             );
+        $data = $this->paginate('Treatment');
+        $this->set('patients',$data);
+
+
+		//$patients=$this->Treatment->find('all', array('conditions'=>array('Treatment.type'=>'consultation'),'order'=>array('Treatment.id'=> 'desc')));
+		//$this->set('patients',$patients);
 	}
 
 	public function allProcedures(){
 		$this->Treatment->bindModel(array('belongsTo'=>array('User'=>array(),'User'=>array('foreignKey'=>false,'conditions'=>array("User.id = Treatment.doctor_id")))));
 		$this->Treatment->bindModel(array('belongsTo'=>array('Patient'=>array(),'Patient'=>array('foreignKey'=>false,'conditions'=>array("Patient.id = Treatment.patient_id")))));
-		$patients=$this->Treatment->find('all', array('conditions'=>array('Treatment.type'=>'procedure'),'order'=>array('Treatment.id'=> 'desc')));
-		$this->set('patients',$patients);
+		
+		$limit=PAGE_LIMIT;
+		$this->paginate = array(
+				 'conditions'=>array('Treatment.type'=>'procedure'),
+				 'order'=>array('Treatment.id'=> 'desc'),
+                 'limit' => $limit
+             );
+        $data = $this->paginate('Treatment');
+        $this->set('patients',$data);
+
+		// $patients=$this->Treatment->find('all', array('conditions'=>array('Treatment.type'=>'procedure'),'order'=>array('Treatment.id'=> 'desc')));
+		// $this->set('patients',$patients);
 	}
 
 	

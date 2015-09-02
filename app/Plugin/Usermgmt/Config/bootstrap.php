@@ -45,6 +45,8 @@ function UsermgmtInIt(&$controller) {
 		define("SITE_REGISTRATION", true);
 	}
 
+	
+
 	/*
 		set true if you want send registration mail to user
 	*/
@@ -172,10 +174,19 @@ function UsermgmtInIt(&$controller) {
 	if(!defined("LOGIN_COOKIE_NAME")) {
 		define("LOGIN_COOKIE_NAME", 'UsermgmtCookie');
 	}
+	
+	if(!defined("PAGE_LIMIT")) {
+		define("PAGE_LIMIT", '5');
+	}
+
+
 	Cache::config('UserMgmt', array(
 		'engine' => 'File',
 		'duration'=> '+3 months',
 		'path' => CACHE,
 		'prefix' => 'UserMgmt_'
 	));
+
+
+
 }

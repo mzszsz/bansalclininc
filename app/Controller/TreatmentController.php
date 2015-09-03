@@ -132,7 +132,7 @@ class TreatmentController extends UserMgmtAppController {
 				//if($this->Treatment->thisValidate()){
 					$this->Treatment->save($this->request->data,false);
 					$this->Session->setFlash(__('The Treatment is successfully added'));
-					$this->redirect('/allPatients');
+					$this->redirect('/addConsultation/'.$patId);
 				//}
 		}
 	}
@@ -162,7 +162,7 @@ class TreatmentController extends UserMgmtAppController {
 				//if($this->Treatment->thisValidate()){
 					$this->Treatment->save($this->request->data,false);
 					$this->Session->setFlash(__('The Treatment is successfully added'));
-					$this->redirect('/allPatients');
+					$this->redirect('/addProcedure/'.$patId);
 				//}
 		}
 	}
@@ -251,5 +251,115 @@ class TreatmentController extends UserMgmtAppController {
 			}
 	}
 
+	public function allReports($value='')
+	{
+		$typeOfTreatments=array('all'=>'All Treatments','consultation'=>'Consultation','procedure'=>'Procedure');
+		$this->set('types', $typeOfTreatments);
+		$by=array('day'=>'By Day','week'=>'Weekly','month'=>'Monthly','year'=>'Yearly');
+		$this->set('bydays', $by);
+
+		$category_id=array('0'=>'All Procedure','Cosmatic'=>'Cosmatic','Medicare'=>'Medicare');
+		$this->set('categories', $category_id);
+
+		$doc=$this->User->getDocAll();
+		$this->set('doctors', $doc);
+
+		$this->Treatment->bindModel(array('belongsTo'=>array('User'=>array(),'User'=>array('foreignKey'=>false,'conditions'=>array("User.id = Treatment.doctor_id")))));
+		$this->Treatment->bindModel(array('belongsTo'=>array('Patient'=>array(),'Patient'=>array('foreignKey'=>false,'conditions'=>array("Patient.id = Treatment.patient_id")))));
+		$this->Treatment->bindModel(array('belongsTo'=>array('ProcedureCategory'=>array(),'ProcedureCategory'=>array('foreignKey'=>false,'conditions'=>array("ProcedureCategory.id = Treatment.category_id",'Treatment.category_id!=0')))));
+		
+		//$patients=$this->Treatment->find('all', array('conditions'=>array('Treatment.type'=>'procedure'),'order'=>array('Treatment.id'=> 'desc')));
+		if ($this->request -> isPost() && isset($this->request->data['allReports']['byday_id'])) {
+			
+			$byid=$this->request->data['allReports']['byday_id'];
+			
+			if($byid=='day'){
+				$conditions=array("STR_TO_DATE(Treatment.time, '%Y-%m-%d') = '".date('Y-m-d')."'");
+			}
+			elseif($byid=='week'){
+				$dayoftheweek = date('w'); //PHP : from 0 (sunday) to 6 (pour saturday)
+				if ($dayoftheweek == 0)
+				$dayoftheweek = 7;
+				$monday= mktime(0, 0, 0, date('m') , date('d') - $dayoftheweek +1, date('Y'));
+				$sunday= mktime(0, 0, 0, date('m') , date('d') + 7 - $dayoftheweek, date('Y'));
+				$date1=date('Y-m-d', $monday);$date2=date('Y-m-d', $sunday) ;
+
+				$conditions=array("STR_TO_DATE(Treatment.time, '%Y-%m-%d') between '$date1' and '$date2'");
+			}
+			elseif($byid=='month'){
+				$conditions=array("DATE_FORMAT(Treatment.time, '%Y-%m') = '".date('Y-m')."'");
+			}
+			elseif($byid=='year'){
+				$conditions=array("YEAR(STR_TO_DATE(Treatment.time, '%Y-%m-%d')) = '".date('Y')."'");
+			}
+			else{
+				$conditions=array("STR_TO_DATE(Treatment.time, '%Y-%m-%d') = '".date('Y-m-d')."'");
+			}
+
+			$patients=$this->Treatment->find('all', array('conditions'=>$conditions,'order'=>array('Treatment.id'=> 'desc')));
+			$this->set('patients',$patients);
+		}
+		elseif ($this->request -> isPost() && !isset($this->request->data['allReports']['byday_id'])) {
+			$chk_date1=$this->request->data['allReports']['date1'];
+			$chk_date2=$this->request->data['allReports']['date2'];
+			$date1=date('Y-m-d',strtotime($this->request->data['allReports']['date1']));
+			$date2=date('Y-m-d',strtotime($this->request->data['allReports']['date2']));
+			$type=$this->request->data['allReports']['type_id'];
+			$doctor=$this->request->data['allReports']['doctor_id'];
+			$category=$this->request->data['allReports']['category_id'];
+			$conditions=array();
+			
+			if($type!='all'){
+				$conditions['Treatment.type']=$type;
+			}
+
+			if($doctor!='0'){
+				$conditions['Treatment.doctor_id']=$doctor;
+			}
+			if($category!='0'){
+				$conditions['ProcedureCategory.type']=$category;
+			}
+			if(!empty($chk_date1) && !empty($chk_date2)){
+				$conditions=array();
+				if($type!='all'){
+					$conditions['Treatment.type']=$type;
+				}
+
+				if($doctor!='0'){
+					$conditions['Treatment.doctor_id']=$doctor;
+				}
+				$conditions['and'] = array(array("STR_TO_DATE(Treatment.time, '%Y-%m-%d') between '$date1' and '$date2'"));
+			}
+
+
+			$patients=$this->Treatment->find('all', array('conditions'=>$conditions,'order'=>array('Treatment.id'=> 'desc')));
+			$this->set('patients',$patients);
+		}
+		else{
+
+			$conditions=array();
+			$limit=PAGE_LIMIT;
+			$this->paginate = array(
+					 'conditions'=>$conditions,
+					 'order'=>array('Treatment.id'=> 'desc'),
+	                 'limit' => $limit
+	             );
+	        $data = $this->paginate('Treatment');
+	        $this->set('patients',$data);
+	        $this->set('all',true);
+	        $total=$this->Treatment->find('first', array('conditions'=>$conditions,'fields'=>'count(*) as total_row','order'=>array('Treatment.id'=> 'desc')));
+			$total=$total[0]['total_row'];
+			$this->set('total',$total);
+			//var_dump($total);
+
+			$sum=$this->Treatment->find('first', array('conditions'=>$conditions,'fields'=>'sum(fee) as sum_row','order'=>array('Treatment.id'=> 'desc')));
+			$sum=$sum[0]['sum_row'];
+			$this->set('sum',$sum);
+			//var_dump($sum);
+
+
+
+		}
+	}
 	
 }

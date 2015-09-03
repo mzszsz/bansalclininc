@@ -64,10 +64,19 @@
                                                     </div>
                                                     <div class="form-group">
                                                         <div class="row">
+                                                        <div class="col-sm-4"></div>
+                                                        <div class="col-sm-8"><?php echo $this->Form->input("type" ,array('type' => 'radio','label' => true,'legend' => false,'div' => false,
+                                                                'options' => array('0'=>'Follow Up','1'=>'New'),'value'=>'1','class'=>'fee_Cat'))?></div>
+                                                    </div>
+                                                    </div>
+
+                                                     <div class="form-group fee_input">
+                                                        <div class="row">
                                                         <div class="col-sm-4"><label><?php echo __('Fee');?></label></div>
                                                         <div class="col-sm-8"><?php echo $this->Form->input("fee" ,array('label' => false,'div' => false,'class'=>"form-control" ))?></div>
                                                     </div>
                                                     </div>
+
 
                                                     <div class="form-group">
                                                         <div class="row">
@@ -102,7 +111,7 @@
                                       <div class="well well-sm">
                                         <div class="row">
                                             <div class="col-md-3">
-                                                <img src="<?php echo $this->webroot.$value['Treatment']['image']; ?>" class="thumbnail">
+                                                <img src="<?php echo $this->webroot.$value['Treatment']['image']; ?>" class="thumbnail" onerror="this.onerror=null;this.src='<?php echo $this->webroot; ?>images/noimage.jpg';">
                                             </div>
                                             <div class="col-md-9">
 

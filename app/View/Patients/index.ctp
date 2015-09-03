@@ -14,6 +14,21 @@
                 </div>
             </div>
             <div class="row">
+            <div class="col-sm-12">
+                <form action="#search" name="search form" method="post">
+                    <div class="input-group">
+                      <span class="input-group-addon" style="padding:0 10px;"><i class="fa fa-search"></i></span>
+                      <input type="text" class="form-control search_field" name="search" autocomplete="off" placeholder="Search Patient by name, ID, email or phone number...">
+                      <span class="input-group-addon" style="padding:0;border:0"><button type="submit" class="btn btn-primary search_btn">Search</button></span>
+                    </div>
+
+                    <div class="search_result">
+
+                    </div>
+                </form>
+            </div>
+            </div>
+            <div class="row">
                 <div class="col-md-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">

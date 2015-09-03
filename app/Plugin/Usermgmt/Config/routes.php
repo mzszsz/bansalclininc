@@ -46,6 +46,8 @@ Router::connect('/allProcedures/*', array('controller' => 'Treatment', 'action' 
 Router::connect('/deleteProcedure/*', array('controller' => 'Treatment', 'action' => 'deleteProcedure'));
 Router::connect('/editProcedure/*', array('controller' => 'Treatment', 'action' => 'editProcedure'));
 
+Router::connect('/allReports', array('controller' => 'Treatment', 'action' => 'allReports'));
+
 //CASE CONTROLLER
 Router::connect('/addProCat', array('controller' => 'ProcedureCategory', 'action' => 'addProCat'));
 Router::connect('/editProCat/*', array('controller' => 'ProcedureCategory', 'action' => 'editProCat'));

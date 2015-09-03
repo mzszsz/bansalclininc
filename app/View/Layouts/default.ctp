@@ -61,6 +61,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
     <!-- Custom Theme JavaScript -->
     <?php echo $this->Html->script('sb-admin-2.js'); ?>
+    <?php echo $this->Html->script('csv.js'); ?>
 </head>
 <body>
 	<div id="container">
@@ -93,6 +94,21 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     format: 'yy-mm-dd',
     startDate: '-3d'
   })
+  $(document).ready(function(){
+  	$('body').on('click','.fee_Cat',function() {
+      var val=$(this).val();
+      if(val!=0){
+        $('.fee_input').show();
+      }
+      else{
+        $('.fee_input').hide();
+        $('.fee_input input').val('0');
+      }
+    });
+    $('body').on('change','.byid select',function() {
+      $('.byid').submit();
+    });
+  });
 </script>
 	   
 <script type="text/javascript">

@@ -394,6 +394,16 @@ EMAIL_FROM_NAME;
 		}
 		return $docs;
 	}
+	public function getDocall($single='') {
+		$this->unbindModel(array('hasMany' => array('UserGroupPermission')));
+		$result=$this->find("all",array('conditions'=>array('User.user_group_id'=>DOC_GROUP_ID)));
+		$docs=array();
+		$docs['0']='All Doctors';
+		foreach ($result as $row) {
+			$docs[$row['User']['id']]=$row['User']['first_name']." ".$row['User']['last_name'];
+		}
+		return $docs;
+	}
 
 	public function mainParentId() {
 		$userId = $this->userAuth->getUserId();

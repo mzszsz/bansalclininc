@@ -140,3 +140,5 @@ Content-Transfer-Encoding: 8bit
 2015-09-02 05:02:38 Debug: permission: actionUrl-patients/searchPatient
 2015-09-02 05:51:19 Debug: permission: actionUrl-users/dashboard
 2015-09-02 05:59:28 Debug: permission: actionUrl-users/dashboard
+2015-09-03 01:04:43 Debug: permission: actionUrl-users/dashboard
+2015-09-03 05:06:37 Debug: permission: actionUrl-Treatment/allReports

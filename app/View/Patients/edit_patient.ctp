@@ -131,7 +131,7 @@
 
                                             if($value['Treatment']['type']=='consultation'){?>
                                             <div class="col-md-3">
-                                                <img src="<?php echo $this->webroot.$value['Treatment']['image']; ?>" class="thumbnail">
+                                                <img src="<?php echo $this->webroot.$value['Treatment']['image']; ?>" class="thumbnail" onerror="this.onerror=null;this.src='<?php echo $this->webroot; ?>images/noimage.jpg';">
                                             </div>
                                             <div class="col-md-9">
                                             <?php }else{

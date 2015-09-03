@@ -73,3 +73,6 @@ img{
   background: url('../images/banner_2.jpg');
   background-size: cover;
 }
+input[type="radio"] + label {
+  padding: 0 20px 0 10px;
+}

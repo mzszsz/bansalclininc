@@ -53,10 +53,10 @@
                                         <a href="#"><i class="fa fa-users fa-fw"></i> Patients<span class="fa arrow"></span></a>
                                         <ul class="nav nav-second-level">
                                             <li>
-                                                <a href="<?php echo $this->base; ?>/addPatient/">Add new Patient</a>
+                                                <a href="<?php echo $this->base; ?>/allPatients/">All Patients</a>
                                             </li>
                                             <li>
-                                                <a href="<?php echo $this->base; ?>/allPatients/">All Patients</a>
+                                                <a href="<?php echo $this->base; ?>/addPatient/">Add new Patient</a>
                                             </li>
                                         </ul>
                                         <!-- /.nav-second-level -->
@@ -75,6 +75,7 @@
                                     </li>
                                     <li><a href="<?php echo $this->base; ?>/allProcedures/"><i class="fa fa-file fa-fw"></i> All Procedures</a></li>
                                     <li><a href="<?php echo $this->base; ?>/allConsultations/"><i class="fa fa-file fa-fw"></i> All Consultations</a></li>
+                                    <li><a href="<?php echo $this->base; ?>/allReports/"><i class="fa fa-file fa-fw"></i> Reports</a></li>
                                     <li><a href="<?php echo $this->base; ?>/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
                                     
                                     <?php }elseif($this->UserAuth->isRec()){ ?>
@@ -82,10 +83,10 @@
                                         <a href="#"><i class="fa fa-users fa-fw"></i> Patients<span class="fa arrow"></span></a>
                                         <ul class="nav nav-second-level">
                                             <li>
-                                                <a href="<?php echo $this->base; ?>/addPatient/">Add new Patient</a>
+                                                <a href="<?php echo $this->base; ?>/allPatients/">All Patients</a>
                                             </li>
                                             <li>
-                                                <a href="<?php echo $this->base; ?>/allPatients/">All Patients</a>
+                                                <a href="<?php echo $this->base; ?>/addPatient/">Add new Patient</a>
                                             </li>
                                         </ul>
                                         <!-- /.nav-second-level -->

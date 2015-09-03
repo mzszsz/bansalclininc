@@ -8573,3 +8573,314 @@ Stack Trace:
 #8 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PatientsController), Object(CakeRequest))
 #9 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
+2015-09-03 11:08:54 Error: [MissingControllerException] Controller class AllReportsController could not be found.
+Exception Attributes: array (
+  'class' => 'AllReportsController',
+  'plugin' => NULL,
+)
+Request URL: /bansalclinic/allReports/
+Stack Trace:
+#0 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-03 01:39:27 Error: [MissingViewException] View file "Treatment/all_reports.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Treatment/all_reports.ctp',
+)
+Request URL: /bansalclinic/allReports/
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TreatmentController), Object(CakeRequest))
+#4 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-09-03 01:53:25 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/var/www/html/bansalclinic/app/Plugin/Usermgmt/Model/User.php, line 401]
+2015-09-03 01:53:25 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /bansalclinic/allReports/
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 401)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 401, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 401, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-03 01:53:36 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/var/www/html/bansalclinic/app/Plugin/Usermgmt/Model/User.php, line 401]
+2015-09-03 01:53:36 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /bansalclinic/allReports/
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 401)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 401, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 401, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-03 02:27:52 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Item.date_start' in 'where clause'
+Request URL: /bansalclinic/allReports/
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Treatme...', Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Treatme...', Array, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Treatme...', false)
+#4 /var/www/html/bansalclinic/lib/Cake/Model/Model.php(3022): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/bansalclinic/lib/Cake/Model/Model.php(2994): Model->_readDataSource('all', Array)
+#6 /var/www/html/bansalclinic/app/Controller/TreatmentController.php(291): Model->find('all', Array)
+#7 [internal function]: TreatmentController->allReports()
+#8 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TreatmentController), Array)
+#9 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TreatmentController), Object(CakeRequest))
+#11 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-09-03 02:28:29 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1630 FUNCTION Treatment.date does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+Request URL: /bansalclinic/allReports/
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Treatme...', Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Treatme...', Array, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Treatme...', false)
+#4 /var/www/html/bansalclinic/lib/Cake/Model/Model.php(3022): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/bansalclinic/lib/Cake/Model/Model.php(2994): Model->_readDataSource('all', Array)
+#6 /var/www/html/bansalclinic/app/Controller/TreatmentController.php(291): Model->find('all', Array)
+#7 [internal function]: TreatmentController->allReports()
+#8 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TreatmentController), Array)
+#9 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TreatmentController), Object(CakeRequest))
+#11 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-09-03 02:28:42 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1630 FUNCTION Treatment.date does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+Request URL: /bansalclinic/allReports/
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Treatme...', Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Treatme...', Array, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Treatme...', false)
+#4 /var/www/html/bansalclinic/lib/Cake/Model/Model.php(3022): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/bansalclinic/lib/Cake/Model/Model.php(2994): Model->_readDataSource('all', Array)
+#6 /var/www/html/bansalclinic/app/Controller/TreatmentController.php(291): Model->find('all', Array)
+#7 [internal function]: TreatmentController->allReports()
+#8 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TreatmentController), Array)
+#9 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TreatmentController), Object(CakeRequest))
+#11 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-09-03 02:29:00 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'time' in where clause is ambiguous
+Request URL: /bansalclinic/allReports/
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Treatme...', Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Treatme...', Array, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Treatme...', false)
+#4 /var/www/html/bansalclinic/lib/Cake/Model/Model.php(3022): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/bansalclinic/lib/Cake/Model/Model.php(2994): Model->_readDataSource('all', Array)
+#6 /var/www/html/bansalclinic/app/Controller/TreatmentController.php(291): Model->find('all', Array)
+#7 [internal function]: TreatmentController->allReports()
+#8 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TreatmentController), Array)
+#9 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TreatmentController), Object(CakeRequest))
+#11 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-09-03 02:58:53 Error: [NotFoundException] Not Found
+Request URL: /bansalclinic/allReports/page:2
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(1086): PaginatorComponent->paginate('Treatment', Array, Array)
+#1 /var/www/html/bansalclinic/app/Controller/TreatmentController.php(301): Controller->paginate('Treatment')
+#2 [internal function]: TreatmentController->allReports()
+#3 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TreatmentController), Array)
+#4 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TreatmentController), Object(CakeRequest))
+#6 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-09-03 02:59:07 Error: [NotFoundException] Not Found
+Request URL: /bansalclinic/allReports/page:3
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(1086): PaginatorComponent->paginate('Treatment', Array, Array)
+#1 /var/www/html/bansalclinic/app/Controller/TreatmentController.php(301): Controller->paginate('Treatment')
+#2 [internal function]: TreatmentController->allReports()
+#3 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TreatmentController), Array)
+#4 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TreatmentController), Object(CakeRequest))
+#6 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-09-03 02:59:30 Error: [NotFoundException] Not Found
+Request URL: /bansalclinic/allReports/page:2
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(1086): PaginatorComponent->paginate('Treatment', Array, Array)
+#1 /var/www/html/bansalclinic/app/Controller/TreatmentController.php(301): Controller->paginate('Treatment')
+#2 [internal function]: TreatmentController->allReports()
+#3 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TreatmentController), Array)
+#4 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TreatmentController), Object(CakeRequest))
+#6 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-09-03 12:30:08 Error: [MissingControllerException] Controller class AllReportsController could not be found.
+Exception Attributes: array (
+  'class' => 'AllReportsController',
+  'plugin' => NULL,
+)
+Request URL: /bansalclinic/allReports/page:2
+Stack Trace:
+#0 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-03 12:30:16 Error: [MissingControllerException] Controller class AllReportsController could not be found.
+Exception Attributes: array (
+  'class' => 'AllReportsController',
+  'plugin' => NULL,
+)
+Request URL: /bansalclinic/allReports/page:2
+Stack Trace:
+#0 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-03 03:01:22 Error: [NotFoundException] Not Found
+Request URL: /bansalclinic/Treatment/allReports/page:2
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(1086): PaginatorComponent->paginate('Treatment', Array, Array)
+#1 /var/www/html/bansalclinic/app/Controller/TreatmentController.php(301): Controller->paginate('Treatment')
+#2 [internal function]: TreatmentController->allReports()
+#3 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TreatmentController), Array)
+#4 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TreatmentController), Object(CakeRequest))
+#6 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-09-03 03:01:44 Error: [NotFoundException] Not Found
+Request URL: /bansalclinic/Treatment/allReports/page:2
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(1086): PaginatorComponent->paginate('Treatment', Array, Array)
+#1 /var/www/html/bansalclinic/app/Controller/TreatmentController.php(301): Controller->paginate('Treatment')
+#2 [internal function]: TreatmentController->allReports()
+#3 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TreatmentController), Array)
+#4 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TreatmentController), Object(CakeRequest))
+#6 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-09-03 03:07:32 Error: Fatal Error (1): Call to a member function paginate() on a non-object in [/var/www/html/bansalclinic/app/Controller/TreatmentController.php, line 301]
+2015-09-03 03:07:32 Error: [FatalErrorException] Call to a member function paginate() on a non-object
+Request URL: /bansalclinic/Treatment/allReports
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/b...', 301)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/b...', 301, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/b...', 301, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-03 03:07:45 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'paginate' at line 1
+Request URL: /bansalclinic/Treatment/allReports
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('paginate', Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('paginate', Array, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('paginate', Array, Array)
+#4 /var/www/html/bansalclinic/lib/Cake/Model/Model.php(827): DboSource->query('paginate', Array, Object(AppModel))
+#5 /var/www/html/bansalclinic/app/Controller/TreatmentController.php(301): Model->__call('paginate', Array)
+#6 /var/www/html/bansalclinic/app/Controller/TreatmentController.php(301): AppModel->paginate('Treatment')
+#7 [internal function]: TreatmentController->allReports()
+#8 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TreatmentController), Array)
+#9 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TreatmentController), Object(CakeRequest))
+#11 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-09-03 03:17:52 Error: [NotFoundException] Not Found
+Request URL: /bansalclinic/Treatment/allReports/page:2
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(1086): PaginatorComponent->paginate(NULL, Array, Array)
+#1 /var/www/html/bansalclinic/app/Controller/TreatmentController.php(369): Controller->paginate()
+#2 [internal function]: TreatmentController->allReports()
+#3 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TreatmentController), Array)
+#4 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TreatmentController), Object(CakeRequest))
+#6 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-09-03 13:07:22 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /bansalclinic/js/scv.js
+Stack Trace:
+#0 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-03 13:07:22 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /bansalclinic/js/scv.js
+Stack Trace:
+#0 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-03 05:10:27 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*) as sum_row FROM `clinic`.`treatments` AS `Treatment`   WHERE 1 = 1   ORDER BY' at line 1
+Request URL: /bansalclinic/allReports/
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT sum(*) a...', Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT sum(*) a...', Array, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT sum(*) a...', false)
+#4 /var/www/html/bansalclinic/lib/Cake/Model/Model.php(3022): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/bansalclinic/lib/Cake/Model/Model.php(2994): Model->_readDataSource('first', Array)
+#6 /var/www/html/bansalclinic/app/Controller/TreatmentController.php(316): Model->find('first', Array)
+#7 [internal function]: TreatmentController->allReports()
+#8 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TreatmentController), Array)
+#9 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TreatmentController), Object(CakeRequest))
+#11 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-09-03 05:28:02 Error: Fatal Error (4): syntax error, unexpected '.' in [/var/www/html/bansalclinic/app/View/Treatment/all_reports.ctp, line 150]
+2015-09-03 05:28:02 Error: [FatalErrorException] syntax error, unexpected '.'
+Request URL: /bansalclinic/allReports/
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 150)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 150, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 150, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-03 05:47:32 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY `Treatment`.`id` desc' at line 1
+Request URL: /bansalclinic/allReports/
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Treatme...', Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Treatme...', Array, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Treatme...', false)
+#4 /var/www/html/bansalclinic/lib/Cake/Model/Model.php(3022): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/bansalclinic/lib/Cake/Model/Model.php(2994): Model->_readDataSource('all', Array)
+#6 /var/www/html/bansalclinic/app/Controller/TreatmentController.php(275): Model->find('all', Array)
+#7 [internal function]: TreatmentController->allReports()
+#8 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TreatmentController), Array)
+#9 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TreatmentController), Object(CakeRequest))
+#11 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-09-03 05:58:17 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'YEAR_MONTH(STR_TO_DATE(`Treatment`.`time`, '%Y-%m-%d')) = '2015-09'   ORDER BY `' at line 1
+Request URL: /bansalclinic/allReports/
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Treatme...', Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Treatme...', Array, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Treatme...', false)
+#4 /var/www/html/bansalclinic/lib/Cake/Model/Model.php(3022): DboSource->read(Object(AppModel), Array)
+#5 /var/www/html/bansalclinic/lib/Cake/Model/Model.php(2994): Model->_readDataSource('all', Array)
+#6 /var/www/html/bansalclinic/app/Controller/TreatmentController.php(287): Model->find('all', Array)
+#7 [internal function]: TreatmentController->allReports()
+#8 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TreatmentController), Array)
+#9 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TreatmentController), Object(CakeRequest))
+#11 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-09-03 15:36:45 Error: Fatal Error (4): syntax error, unexpected '–' (T_STRING) in [/var/www/html/bansalclinic/app/Controller/TreatmentController.php, line 281]
+2015-09-03 15:36:45 Error: [FatalErrorException] syntax error, unexpected '–' (T_STRING)
+Request URL: /bansalclinic/allReports/
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 281)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 281, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 281, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-03 15:37:02 Error: Fatal Error (4): syntax error, unexpected 'from' (T_STRING), expecting ',' or ';' in [/var/www/html/bansalclinic/app/Controller/TreatmentController.php, line 284]
+2015-09-03 15:37:02 Error: [FatalErrorException] syntax error, unexpected 'from' (T_STRING), expecting ',' or ';'
+Request URL: /bansalclinic/allReports/
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 284)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 284, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 284, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

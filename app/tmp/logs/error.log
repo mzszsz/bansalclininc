@@ -8303,3 +8303,273 @@ Stack Trace:
 #3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-09-02 03:56:58 Error: [MissingViewException] View file "Patients/search_patient.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Patients/search_patient.ctp',
+)
+Request URL: /bansalclinic/searchPatient
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PatientsController), Object(CakeRequest))
+#4 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-09-02 03:57:51 Error: [MissingViewException] View file "Patients/search_patient.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Patients/search_patient.ctp',
+)
+Request URL: /bansalclinic/searchPatient
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PatientsController), Object(CakeRequest))
+#4 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-09-02 05:06:19 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'where clause'
+Request URL: /bansalclinic/searchPatient/gg
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Patient...', Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Patient...', Array, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Patient...', false)
+#4 /var/www/html/bansalclinic/lib/Cake/Model/Model.php(3022): DboSource->read(Object(Patient), Array)
+#5 /var/www/html/bansalclinic/lib/Cake/Model/Model.php(2994): Model->_readDataSource('all', Array)
+#6 /var/www/html/bansalclinic/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(1086): PaginatorComponent->paginate('Patient', Array, Array)
+#8 /var/www/html/bansalclinic/app/Controller/PatientsController.php(153): Controller->paginate('Patient')
+#9 [internal function]: PatientsController->searchPatient('gg')
+#10 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PatientsController), Array)
+#11 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PatientsController), Object(CakeRequest))
+#13 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-09-02 05:17:53 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [/var/www/html/bansalclinic/app/View/Patients/search_patient.ctp, line 59]
+2015-09-02 05:17:53 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /bansalclinic/searchPatient/yo
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 05:17:55 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [/var/www/html/bansalclinic/app/View/Patients/search_patient.ctp, line 59]
+2015-09-02 05:17:55 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /bansalclinic/searchPatient/yoffdgfdgfd
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 05:17:56 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [/var/www/html/bansalclinic/app/View/Patients/search_patient.ctp, line 59]
+2015-09-02 05:17:56 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /bansalclinic/searchPatient/yoffdgfdgfd
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 05:17:57 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [/var/www/html/bansalclinic/app/View/Patients/search_patient.ctp, line 59]
+2015-09-02 05:17:57 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /bansalclinic/searchPatient/yoffdgfdgfd
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 05:17:57 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [/var/www/html/bansalclinic/app/View/Patients/search_patient.ctp, line 59]
+2015-09-02 05:17:57 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /bansalclinic/searchPatient/yoffdgfdgfd
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 05:17:59 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [/var/www/html/bansalclinic/app/View/Patients/search_patient.ctp, line 59]
+2015-09-02 05:17:59 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /bansalclinic/searchPatient/yoffdgfdgfd
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 05:18:02 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [/var/www/html/bansalclinic/app/View/Patients/search_patient.ctp, line 59]
+2015-09-02 05:18:02 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /bansalclinic/searchPatient/yoffdgfdgfdg%20fg
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 05:18:03 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [/var/www/html/bansalclinic/app/View/Patients/search_patient.ctp, line 59]
+2015-09-02 05:18:03 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /bansalclinic/searchPatient/yoffdgfdgfdg%20fg
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 05:18:03 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [/var/www/html/bansalclinic/app/View/Patients/search_patient.ctp, line 59]
+2015-09-02 05:18:03 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /bansalclinic/searchPatient/yoffdgfdgfdg%20fg
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 05:18:03 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [/var/www/html/bansalclinic/app/View/Patients/search_patient.ctp, line 59]
+2015-09-02 05:18:03 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /bansalclinic/searchPatient/yoffdgfdgfdg%20fg
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 05:18:03 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [/var/www/html/bansalclinic/app/View/Patients/search_patient.ctp, line 59]
+2015-09-02 05:18:03 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /bansalclinic/searchPatient/yoffdgfdgfdg%20fg
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 05:18:14 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [/var/www/html/bansalclinic/app/View/Patients/search_patient.ctp, line 59]
+2015-09-02 05:18:14 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /bansalclinic/searchPatient/dfgd%20gsdfgd
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 05:18:21 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [/var/www/html/bansalclinic/app/View/Patients/search_patient.ctp, line 59]
+2015-09-02 05:18:21 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /bansalclinic/searchPatient/ggg
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 05:18:23 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [/var/www/html/bansalclinic/app/View/Patients/search_patient.ctp, line 59]
+2015-09-02 05:18:23 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /bansalclinic/searchPatient/gggdgdf
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 05:18:26 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [/var/www/html/bansalclinic/app/View/Patients/search_patient.ctp, line 59]
+2015-09-02 05:18:26 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /bansalclinic/searchPatient/yo
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 05:18:27 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [/var/www/html/bansalclinic/app/View/Patients/search_patient.ctp, line 59]
+2015-09-02 05:18:27 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /bansalclinic/searchPatient/yo
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 05:18:27 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [/var/www/html/bansalclinic/app/View/Patients/search_patient.ctp, line 59]
+2015-09-02 05:18:27 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /bansalclinic/searchPatient/yo
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 05:18:28 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [/var/www/html/bansalclinic/app/View/Patients/search_patient.ctp, line 59]
+2015-09-02 05:18:28 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /bansalclinic/searchPatient/yo
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 05:18:28 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [/var/www/html/bansalclinic/app/View/Patients/search_patient.ctp, line 59]
+2015-09-02 05:18:28 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /bansalclinic/searchPatient/yo
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 05:18:28 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [/var/www/html/bansalclinic/app/View/Patients/search_patient.ctp, line 59]
+2015-09-02 05:18:28 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /bansalclinic/searchPatient/yo
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 05:18:28 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [/var/www/html/bansalclinic/app/View/Patients/search_patient.ctp, line 59]
+2015-09-02 05:18:28 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /bansalclinic/searchPatient/yo
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/b...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#2 /var/www/html/bansalclinic/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/b...', 59, Array)
+#3 /var/www/html/bansalclinic/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 05:57:34 Error: [MissingHelperException] Helper class UserHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserHelper',
+  'plugin' => false,
+)
+Request URL: /bansalclinic/addPatient/
+Stack Trace:
+#0 /var/www/html/bansalclinic/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('User')
+#1 /var/www/html/bansalclinic/lib/Cake/View/View.php(848): HelperCollection->__isset('User')
+#2 /var/www/html/bansalclinic/app/View/Patients/add_patient.ctp(45): View->__get('User')
+#3 /var/www/html/bansalclinic/lib/Cake/View/View.php(961): include('/var/www/html/b...')
+#4 /var/www/html/bansalclinic/lib/Cake/View/View.php(923): View->_evaluate('/var/www/html/b...', Array)
+#5 /var/www/html/bansalclinic/lib/Cake/View/View.php(473): View->_render('/var/www/html/b...')
+#6 /var/www/html/bansalclinic/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#7 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /var/www/html/bansalclinic/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PatientsController), Object(CakeRequest))
+#9 /var/www/html/bansalclinic/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}

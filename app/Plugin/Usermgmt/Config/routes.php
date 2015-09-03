@@ -34,6 +34,7 @@ Router::connect('/addPatient', array('controller' => 'patients', 'action' => 'ad
 Router::connect('/editPatient/*', array('controller' => 'patients', 'action' => 'editPatient'));
 Router::connect('/allPatients', array( 'controller' => 'patients', 'action' => 'index'));
 Router::connect('/deletePatient/*', array('controller' => 'patients', 'action' => 'deletePatient'));
+Router::connect('/searchPatient/*', array('controller' => 'patients', 'action' => 'searchPatient'));
 
 Router::connect('/addConsultation/*', array('controller' => 'Treatment', 'action' => 'addConsultation'));
 Router::connect('/allConsultations/*', array('controller' => 'Treatment', 'action' => 'allConsultations'));

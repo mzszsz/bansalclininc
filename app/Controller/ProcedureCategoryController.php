@@ -62,6 +62,7 @@ class ProcedureCategoryController extends UserMgmtAppController {
 		if ($this->request -> isPost()) {
 				$this->ProcedureCategory->set($this->data);
 				//if($this->ProcedureCategory->thisValidate()){
+					$this->request->data['ProcedureCategory']['admin_id']=$this->User->mainParentId();
 					$this->ProcedureCategory->save($this->request->data,false);
 					$this->Session->setFlash(__('The Category is successfully added'));
 					$this->redirect('/allProCats');

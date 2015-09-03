@@ -57,3 +57,19 @@ img{
 #property_image_div, #bed_image_div, #drawing_image_div, #kitchen_image_div {
   padding: 20px 0;
 }
+.search_result_inner {
+  border: 1px solid #ccc;
+  display: inline-block;
+  margin: 10px 0 0;
+  padding: 20px;
+  width: 100%;
+}
+.search_result{
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 100%;
+}
+.main_banner{
+  background: url('../images/banner_2.jpg');
+  background-size: cover;
+}

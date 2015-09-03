@@ -55,8 +55,8 @@
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
                                 <?php echo $this->Form->Submit(__('Sign In'),array('class' => 'btn btn-lg btn-success btn-block'));?>
-                                <?php echo $this->Html->link(__("Email Verification",true),"/emailVerification",array("class"=>"style30")) ?>
-								<span class="pull-right"><?php echo $this->Html->link(__("Sign Up",true),"/register") ?></span>
+                                <?php //echo $this->Html->link(__("Email Verification",true),"/emailVerification",array("class"=>"style30")) ?>
+								<span class="pull-right"><?php //echo $this->Html->link(__("Sign Up",true),"/register") ?></span>
 
                             </fieldset>
                         <?php echo $this->Form->end(); ?>

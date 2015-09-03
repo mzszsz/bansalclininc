@@ -14,6 +14,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->Html->meta('icon');
 
 		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('custom_s');
 		echo $this->Html->css('umstyle.css');
 		echo $this->Html->css('bower_components/bootstrap/dist/css/bootstrap.min.css');
 		echo $this->Html->css('bower_components/metisMenu/dist/metisMenu.min.css');
@@ -24,7 +25,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->fetch('script');
 	?>
 </head>
-<body>
+<body class="main_banner">
 	<div id="container">
 		<!-- <div id="header">
 			<h1><?php echo $this->Html->link($cakeDescription, $this->html->url('/', true)); ?></h1>

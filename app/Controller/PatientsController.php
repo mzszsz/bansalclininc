@@ -31,7 +31,7 @@ class PatientsController extends UserMgmtAppController {
 	public function index($type='') {
 		$limit=PAGE_LIMIT;
 		$this->paginate = array(
-				 'conditions'=>array('admin_id'=>$this->UserAuth->getUserId()),
+				 //'conditions'=>array('admin_id'=>$this->UserAuth->getUserId()),
 				 'order'=>'Patient.id desc',
                  'limit' => $limit
              );
@@ -72,6 +72,7 @@ class PatientsController extends UserMgmtAppController {
 		if ($this->request -> isPost()) {
 				$this->Patient->set($this->data);
 				if($this->Patient->thisValidate()){
+					$this->request->data['Patient']['admin_id']=$this->User->mainParentId();
 					$this->Patient->save($this->request->data,false);
 					$this->Session->setFlash(__('Patient is successfully added'));
 					$maxpID=$this->Patient->getLastInsertId();
@@ -141,6 +142,18 @@ class PatientsController extends UserMgmtAppController {
 			$patients=$this->Treatment->find('all', array('conditions'=>array('Treatment.patient_id'=>$patientId),'order'=>array('Treatment.id'=> 'desc')));
 			$this->set('patients',$patients);
 	}
-
+	public function searchPatient($value='')
+	{
+		$this->layout='ajax';
+		$limit=PAGE_LIMIT;
+		$this->paginate = array(
+				 'conditions'=>array('first_name like "%'.$value.'%" or last_name like "%'.$value.'%" or email like "%'.$value.'%" or phone like "%'.$value.'%"'),
+				 'order'=>'Patient.id desc',
+                 'limit' => $limit
+             );
+        $data = $this->paginate('Patient');
+        $this->set('patients',$data);
+        $this->set('limit',$limit);
+	}
 	
 }
